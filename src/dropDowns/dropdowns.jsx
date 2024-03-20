@@ -60,19 +60,19 @@ const Dropdowns = () => {
       <h1>Select Location</h1>
       <div className={styles.dropDowns}>
         <select className={styles.dropDown} value={selectedCountry} onChange={(e)=> setSelectedCountry(e.target.value)}>
-          <option value="">select country</option>
+          <option value="">Select Country</option>
           {countries.map((country)=>(
             <option value={country} key={country}>{country}</option> 
           ))}
         </select>
         <select className={styles.dropDown} value={selectedState} onChange={(e)=> setSelectedState(e.target.value)}>
-          <option value="">select country</option>
+          <option value="">Select States </option>
           {states.map((state)=>(
             <option value={state} key={state}>{state}</option> 
           ))}
         </select>
         <select className={styles.dropDown} value={selectedCity} onChange={(e)=> setSelectedCity(e.target.value)}>
-          <option value="">select country</option>
+          <option value="">Select City</option>
           {cities.map((city)=>(
             <option value={city} key={city}>{city}</option> 
           ))}
